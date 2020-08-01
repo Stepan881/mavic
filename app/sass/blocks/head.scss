@@ -1,0 +1,65 @@
+.head {  
+  color: $color-header;
+  background-color: $bg-color-header;
+  background: url("../../img/header-background.png") 100% 100% no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  
+
+  &__wrapper {
+    top: 218px;
+    // border: 3px solid red;
+    position: absolute;
+    width: 100%;
+
+  }
+
+  &__head {
+    margin: 0;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 115px;
+  }
+  &__drone-img {
+    max-width: 660px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-family: "SFProDisplay-Light";
+    font-size: 17px;
+    line-height: 150%;
+    max-width: 334px;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  &__list-social {
+    
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item-social {
+    margin: 5px;
+  }
+  &__social-link {
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+  &__arrow-bottom {
+    width: 15px;
+    height: 7px;
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.5;
+    }
+  }
+}
+
