@@ -305,21 +305,9 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "SFProDisplay-Bold";
-  src: url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
   font-family: "SFProDisplay-Light";
   src: url("../fonts/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay-Light.woff2") format("woff2");
   font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: "SFProDisplay-Medium";
-  src: url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2");
-  font-weight: 500;
   font-style: normal; }
 
 @font-face {
@@ -329,9 +317,21 @@ template {
   font-style: normal; }
 
 @font-face {
+  font-family: "SFProDisplay-Medium";
+  src: url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
   font-family: "SFProDisplay-Semibold";
   src: url("../fonts/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  src: url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal; }
 
 html {
@@ -357,6 +357,15 @@ ul, li {
 a {
   text-decoration: none; }
 
+.arrow-bottom {
+  margin: 0 auto;
+  width: 15px;
+  height: 7px;
+  transition: 0.3s; }
+  .arrow-bottom:hover {
+    transition: 0.3s;
+    opacity: 0.5; }
+
 .header {
   color: #fff;
   width: 100%;
@@ -371,6 +380,8 @@ a {
     width: 1238px;
     align-items: center;
     justify-content: space-between; }
+    .header__wrapper--bottom {
+      padding: 17px 0; }
   .header__image-wrapper {
     color: #fff;
     width: 54px;
@@ -476,14 +487,6 @@ a {
     .about-drone__social-link:hover {
       opacity: 0.5;
       transition: 0.3s; }
-  .about-drone__arrow-bottom {
-    margin: 0 auto;
-    width: 15px;
-    height: 7px;
-    transition: 0.3s; }
-    .about-drone__arrow-bottom:hover {
-      transition: 0.3s;
-      opacity: 0.5; }
 
 .advantages {
   color: #fff;
@@ -491,15 +494,57 @@ a {
   background: url("../img/advantages-bg.png") 100% 100% no-repeat;
   background-size: cover;
   height: 100vh;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   .advantages__top {
     display: flex; }
   .advantages__wrapper {
+    max-width: 1183px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 510px;
-    padding-bottom: 45px; }
+    margin: 0 auto;
+    max-height: 620px;
+    padding-bottom: 34px;
+    position: relative; }
+  .advantages__content {
+    width: 470px;
+    margin-bottom: 200px; }
+  .advantages__head {
+    font-size: 44px;
+    line-height: 53px;
+    margin: 0 0 53px;
+    font-family: "SFProDisplay-Regular"; }
+  .advantages__text {
+    margin: 0 0 22px 27px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 150%;
+    font-family: "SFProDisplay-Light"; }
+  .advantages__info {
+    font-size: 24px;
+    line-height: 28px; }
+  .advantages__img-wrapper {
+    width: 560px;
+    height: 300px;
+    position: absolute;
+    bottom: 99px;
+    right: 18px;
+    z-index: 1; }
+    .advantages__img-wrapper::before {
+      position: absolute;
+      content: '';
+      border: 6px solid #fff;
+      width: 99%;
+      height: 91%;
+      right: -17px;
+      top: -14px;
+      z-index: -1; }
+  .advantages__info {
+    position: absolute;
+    left: -263px;
+    bottom: 29px;
+    width: 281px;
+    height: 56px;
+    text-align: right; }

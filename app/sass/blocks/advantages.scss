@@ -4,20 +4,73 @@
   background: url("../img/advantages-bg.png") 100% 100% no-repeat;
   background-size: cover;
   height: 100vh;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 
   &__top {
     display: flex;
   }
 
   &__wrapper {
+    max-width: 1183px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 510px;
-    padding-bottom: 45px;
+    margin: 0 auto;
+    max-height: 620px;
+    padding-bottom: 34px;
+    position: relative;
+  }
+
+  &__content {
+    width: 470px;
+    margin-bottom: 200px;
+  }
+
+  &__head {
+    font-size: 44px;
+    line-height: 53px;
+    margin: 0 0 53px;
+    font-family: "SFProDisplay-Regular";
+  }
+  &__text {
+    margin: 0 0 22px 27px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 150%;
+    font-family: "SFProDisplay-Light";
+  }
+  &__info {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__img-wrapper {
+    width: 560px;
+    height: 300px;
+    position: absolute;
+    bottom: 99px;
+    right: 18px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: '';
+      border: 6px solid $color-header;
+      width: 99%;
+      height: 91%;
+      right: -17px;
+      top: -14px;
+      z-index: -1;
+    }
+  }
+  &__info {
+    position: absolute;
+    left: -263px;
+    bottom: 29px;
+    width: 281px;
+    height: 56px;
+    text-align: right;
   }
 }

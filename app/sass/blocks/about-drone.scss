@@ -65,16 +65,5 @@
       transition: 0.3s;
     }
   }
-
-  &__arrow-bottom {
-    margin: 0 auto;
-    width: 15px;
-    height: 7px;
-    transition: 0.3s;
-    &:hover {
-      transition: 0.3s;
-      opacity: 0.5;
-    }
-  }
 }
 
