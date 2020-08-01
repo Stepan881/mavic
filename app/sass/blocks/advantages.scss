@@ -1,8 +1,6 @@
+
 .advantages {
   color: $color-header;
-  background-color: $bg-color-header;
-  background: url("../img/advantages-bg.png") 100% 100% no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,5 +70,37 @@
     width: 281px;
     height: 56px;
     text-align: right;
+  }
+  &__img-arrow {
+    position: absolute;
+    right: -2px;
+    bottom: -48px;
+    width: 120px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &--left {
+      display: flex;
+      background-color: #1C1C1C;
+      width: 50%;
+      height: 48px;
+    }
+    &--right {
+      display: flex;
+      background-color: #FFFFFF;
+      width: 50%;
+      height: 48px;
+    }
   }
 }

@@ -359,12 +359,24 @@ a {
 
 .arrow-bottom {
   margin: 0 auto;
-  width: 15px;
-  height: 7px;
-  transition: 0.3s; }
+  width: 20px;
+  height: 15px;
+  transition: 0.3s;
+  display: flex; }
   .arrow-bottom:hover {
     transition: 0.3s;
     opacity: 0.5; }
+
+.background {
+  position: fixed;
+  background-color: #093428;
+  background: url("../img/advantages-bg.png") 100% 100% no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
 
 .header {
   color: #fff;
@@ -372,7 +384,8 @@ a {
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: inherit; }
+  background-color: inherit;
+  z-index: 2; }
   .header__wrapper {
     padding: 43px 0;
     display: flex;
@@ -490,9 +503,6 @@ a {
 
 .advantages {
   color: #fff;
-  background-color: #093428;
-  background: url("../img/advantages-bg.png") 100% 100% no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -548,3 +558,127 @@ a {
     width: 281px;
     height: 56px;
     text-align: right; }
+  .advantages__img-arrow {
+    position: absolute;
+    right: -2px;
+    bottom: -48px;
+    width: 120px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer; }
+    .advantages__img-arrow span {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .advantages__img-arrow span:hover {
+        opacity: 0.5; }
+    .advantages__img-arrow--left {
+      display: flex;
+      background-color: #1C1C1C;
+      width: 50%;
+      height: 48px; }
+    .advantages__img-arrow--right {
+      display: flex;
+      background-color: #FFFFFF;
+      width: 50%;
+      height: 48px; }
+
+.specifications {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .specifications__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 25px; }
+  .specifications__head {
+    font-size: 44px;
+    line-height: 53px;
+    font-family: "SFProDisplay-Light";
+    margin-left: 10px;
+    margin-bottom: 69px; }
+  .specifications__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 16px; }
+  .specifications__article {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 59px; }
+    .specifications__article:nth-child(1) {
+      margin: 0px 0 90px 0px;
+      position: relative; }
+      .specifications__article:nth-child(1):before {
+        position: absolute;
+        content: '';
+        background: url("../img/1-2.png") 100% 100% no-repeat;
+        background-size: cover;
+        width: 245px;
+        height: 45px;
+        right: -10%;
+        top: 16%; }
+    .specifications__article:nth-child(2) {
+      margin: 12px 0 0 37px;
+      position: relative; }
+      .specifications__article:nth-child(2):before {
+        position: absolute;
+        content: '';
+        background: url("../img/2-3.png") 100% 100% no-repeat;
+        background-size: cover;
+        width: 463px;
+        height: 62.5px;
+        left: -81%;
+        bottom: 9%; }
+    .specifications__article:nth-child(3) {
+      margin: 0 0 78px 23px;
+      position: relative; }
+      .specifications__article:nth-child(3):before {
+        position: absolute;
+        content: '';
+        background: url("../img/3-4.png") 100% 100% no-repeat;
+        background-size: cover;
+        width: 254px;
+        height: 39px;
+        right: -14%;
+        top: 11%; }
+    .specifications__article:nth-child(4) {
+      margin: 15px 0px 0 51px; }
+  .specifications__number {
+    font-size: 36px;
+    line-height: 41px;
+    margin: 93px 5px 0 0; }
+  .specifications__image-wrapper {
+    width: 195px;
+    height: 130px;
+    position: relative;
+    z-index: 1; }
+    .specifications__image-wrapper:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 10px;
+      top: -10px;
+      border: 2px solid #fff;
+      z-index: -1; }
+  .specifications__article-content {
+    margin-left: 32px; }
+  .specifications__article-head {
+    margin: 0;
+    width: 112px;
+    font-size: 21px;
+    line-height: 24px;
+    font-family: "SFProDisplay-Semibold"; }
+  .specifications__article-text {
+    font-size: 15px;
+    line-height: 130%;
+    font-family: "SFProDisplay-Light";
+    font-weight: 300;
+    max-width: 300px; }

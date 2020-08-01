@@ -1,8 +1,13 @@
 @import "./general/normolize";
+
+@import "./general/variabls";
 @import "./general/fonts";
 @import "./general/global";
-@import "./general/variabls";
 
 @import "./blocks/header";
 @import "./blocks/about-drone";
 @import "./blocks/advantages";
+
+@import "./blocks/specifications";
+@import "./blocks/questions";
+@import "./blocks/contacts";
