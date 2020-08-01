@@ -1,0 +1,23 @@
+.advantages {
+  color: $color-header;
+  background-color: $bg-color-header;
+  background: url("../img/advantages-bg.png") 100% 100% no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 510px;
+    padding-bottom: 45px;
+  }
+}

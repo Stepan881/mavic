@@ -426,7 +426,7 @@ a {
     font-family: "SFProDisplay-Bold";
     margin-left: 5px; }
 
-.head {
+.about-drone {
   color: #fff;
   background-color: #093428;
   background: url("../img/header-background.png") 100% 100% no-repeat;
@@ -436,51 +436,70 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .head__top {
+  .about-drone__top {
     display: flex; }
-  .head__wrapper {
+  .about-drone__wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     max-height: 510px;
     padding-bottom: 45px; }
-  .head__head {
+  .about-drone__head {
     margin: 0;
     font-weight: 600;
     font-size: 96px;
     line-height: 115px;
     margin-bottom: 2%; }
-  .head__drone-img {
+  .about-drone__drone-img {
     max-width: 660px;
     max-height: 198px;
     width: 100%;
     height: 100%;
     margin: 0 auto 25px; }
-  .head__text {
+  .about-drone__text {
     font-family: "SFProDisplay-Light";
     font-size: 17px;
     line-height: 150%;
     max-width: 334px;
     width: 100%;
     margin: 0 auto 32px; }
-  .head__list-social {
+  .about-drone__list-social {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     justify-content: center;
     flex-wrap: wrap; }
-  .head__item-social {
+  .about-drone__item-social {
     margin: 5px 25px; }
-  .head__social-link {
+  .about-drone__social-link {
     transition: 0.3s; }
-    .head__social-link:hover {
+    .about-drone__social-link:hover {
       opacity: 0.5;
       transition: 0.3s; }
-  .head__arrow-bottom {
+  .about-drone__arrow-bottom {
     margin: 0 auto;
     width: 15px;
     height: 7px;
     transition: 0.3s; }
-    .head__arrow-bottom:hover {
+    .about-drone__arrow-bottom:hover {
       transition: 0.3s;
       opacity: 0.5; }
+
+.advantages {
+  color: #fff;
+  background-color: #093428;
+  background: url("../img/advantages-bg.png") 100% 100% no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .advantages__top {
+    display: flex; }
+  .advantages__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 510px;
+    padding-bottom: 45px; }
