@@ -5,14 +5,20 @@
   background-size: cover;
   height: 100vh;
   text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+  }
 
   &__wrapper {
-    top: 218px;
-    // border: 3px solid red;
-    position: absolute;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    max-height: 510px;
+    padding-bottom: 45px;
   }
 
   &__head {
@@ -20,31 +26,38 @@
     font-weight: 600;
     font-size: 96px;
     line-height: 115px;
+    margin-bottom: 2%;
   }
+
   &__drone-img {
     max-width: 660px;
+    max-height: 198px;
     width: 100%;
-    margin-bottom: 25px;
+    height: 100%;
+    margin: 0 auto 25px;
   }
+
   &__text {
     font-family: "SFProDisplay-Light";
     font-size: 17px;
     line-height: 150%;
     max-width: 334px;
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto 32px;
   }
+
   &__list-social {
-    
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     justify-content: center;
     flex-wrap: wrap;
   }
+
   &__item-social {
-    margin: 5px;
+    margin: 5px 25px;
   }
+
   &__social-link {
     transition: 0.3s;
     &:hover {
@@ -52,7 +65,9 @@
       transition: 0.3s;
     }
   }
+
   &__arrow-bottom {
+    margin: 0 auto;
     width: 15px;
     height: 7px;
     transition: 0.3s;

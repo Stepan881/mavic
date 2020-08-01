@@ -11,9 +11,9 @@
     padding: 43px 0;
     display: flex;
     flex-direction: row;
-    max-width: 1366px;
+    width: 1238px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__image-wrapper {
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     width: 180px;
-    margin-right: 100px;
+    
   }
 
   &__logo-text {
@@ -39,14 +39,19 @@
     height: 100%;
   }
 
+&__nav {
+  margin-left: auto;
+}
+
   &__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 78px;
   }
   
   &__item {
-    margin: 5px;
+    margin: 5px 12px;
     align-items: center;
     display: flex;
     align-items: center;
@@ -70,14 +75,14 @@
     border-radius: 3px;
     font-size: 15px;
     line-height: 17px;
-    margin-left: 84px;
+    margin-left: auto;
   }
   &__tel {
     font-size: 16px;
     line-height: 18px;
     color: $color-header;
-    margin-left: 8px;
     white-space: nowrap;
     font-family: "SFProDisplay-Bold";
+    margin-left: 5px;
   }
 }
