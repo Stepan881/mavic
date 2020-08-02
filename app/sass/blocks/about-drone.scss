@@ -1,69 +1,106 @@
-.about-drone {  
+
+.about-drone {
   color: $color-header;
-  background-color: $bg-color-header;
-  background: url("../img/header-background.png") 100% 100% no-repeat;
-  background-size: cover;
   height: 100vh;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 
   &__top {
     display: flex;
   }
 
   &__wrapper {
+    max-width: 1183px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 510px;
-    padding-bottom: 45px;
+    margin: 0 auto;
+    max-height: 620px;
+    padding-bottom: 34px;
+    position: relative;
+  }
+
+  &__content {
+    width: 470px;
+    margin-bottom: 200px;
   }
 
   &__head {
-    margin: 0;
-    font-weight: 600;
-    font-size: 96px;
-    line-height: 115px;
-    margin-bottom: 2%;
+    font-size: 44px;
+    line-height: 53px;
+    margin: 0 0 53px;
+    font-family: "SFProDisplay-Regular";
   }
-
-  &__drone-img {
-    max-width: 660px;
-    max-height: 198px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto 25px;
-  }
-
   &__text {
-    font-family: "SFProDisplay-Light";
+    margin: 0 0 22px 27px;
+    font-weight: 300;
     font-size: 17px;
     line-height: 150%;
-    max-width: 334px;
-    width: 100%;
-    margin: 0 auto 32px;
+    font-family: "SFProDisplay-Light";
   }
+  &__info {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__img-wrapper {
+    width: 560px;
+    height: 300px;
+    position: absolute;
+    bottom: 99px;
+    right: 18px;
+    z-index: 1;
 
-  &__list-social {
+    &::before {
+      position: absolute;
+      content: '';
+      border: 6px solid $color-header;
+      width: 99%;
+      height: 91%;
+      right: -17px;
+      top: -14px;
+      z-index: -1;
+    }
+  }
+  &__info {
+    position: absolute;
+    left: -263px;
+    bottom: 29px;
+    width: 281px;
+    height: 56px;
+    text-align: right;
+  }
+  &__img-arrow {
+    position: absolute;
+    right: -2px;
+    bottom: -48px;
+    width: 120px;
+    height: 48px;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
 
-  &__item-social {
-    margin: 5px 25px;
-  }
+    cursor: pointer;
 
-  &__social-link {
-    transition: 0.3s;
-    &:hover {
-      opacity: 0.5;
-      transition: 0.3s;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &--left {
+      display: flex;
+      background-color: #1C1C1C;
+      width: 50%;
+      height: 48px;
+    }
+    &--right {
+      display: flex;
+      background-color: #FFFFFF;
+      width: 50%;
+      height: 48px;
     }
   }
 }
-

@@ -1,5 +1,4 @@
 .specifications {
-  // outline: 1px solid red;
   color: $color-header;
   height: 100vh;
   display: flex;
@@ -15,122 +14,126 @@
    
   }
 
-  &__head {
-    font-size: 44px;
-    line-height: 53px;  
-    font-family: "SFProDisplay-Light";
-    margin-left: 10px;
-    margin-bottom: 69px;
-  }
-
   &__content {
+    max-width: 1170px;
+    width: 100%;
+    padding-left: 42px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    margin-left: 16px;
-  }
-
-  &__article {
-    max-width: 600px;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 59px;
-
-    &:nth-child(1) {
-      margin: 0px 0 90px 0px;
-      position: relative;
-
-      &:before {
-        position: absolute;
-        content: '';
-        background: url("../img/1-2.png") 100% 100% no-repeat;
-        background-size: cover;
-        width: 245px;
-        height: 45px;
-        right: -10%;
-        top: 16%;
-      }
-    }
-
-    &:nth-child(2) {
-      margin: 12px 0 0 37px;
-
-      position: relative;
-
-      &:before {
-        position: absolute;
-        content: '';
-        background: url("../img/2-3.png") 100% 100% no-repeat;
-        background-size: cover;
-        width: 463px;
-        height: 62.5px;
-        left: -81%;
-        bottom: 9%;
-      }
-    }
-
-    &:nth-child(3) {
-      margin: 0 0 78px 23px;      
-      position: relative;
-
-      &:before {
-        position: absolute;
-        content: '';
-        background: url("../img/3-4.png") 100% 100% no-repeat;
-        background-size: cover;
-        width: 254px;
-        height: 39px;
-        right: -14%;
-        top: 11%;
-      }
-    }
-    &:nth-child(4) {
-      margin: 15px 0px 0 51px;
-    }
-  }
-
-  &__number {
-    font-size: 36px;
-    line-height: 41px;
-    margin: 93px 5px 0 0;
+    position: relative;
   }
 
   &__image-wrapper {
-    width: 195px;
-    height: 130px;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    bottom: 160px;
+    width: 100%;
+    text-align: center;
+    
 
-    &:before {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      left: 10px;
-      top: -10px;
-      border: 2px solid $color-header;
-      z-index: -1;
+    img {
+      max-width: 660px;
+      margin: 0 auto;
+      padding-right: 82px;
     }
   }
 
-  &__article-content {
-    margin-left: 32px;
+  &__item-top,
+  &__item-bottom {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+ 
   }
 
-  &__article-head {
-    margin: 0;
-    width: 112px;
+  &__item-top {
+    margin-bottom: 100px;
+
+    .specifications__item {
+      &:nth-child(1) {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: '';
+          background: url("../img/pointer1.png") 100% 100% no-repeat;
+          background-size: cover;
+          width: 229px;
+          height: 116px;
+          right: -45%;
+          bottom: 14%;
+        }
+      }
+      &:nth-child(2) {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: '';
+          background: url("../img/pointer2.png") 100% 100% no-repeat;
+          background-size: cover;
+          width: 258px;
+          height: 104px;
+          left: -97%;
+          bottom: 20%;
+        }
+      }
+    }
+  }
+  &__item-bottom { 
+    margin-bottom: 21px;
+
+    .specifications__item {
+      &:nth-child(1) {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: '';
+          background: url("../img/pointer3.png") 100% 100% no-repeat;
+          background-size: cover;
+          width: 346px;
+          height: 83px;
+          right: -95%;
+          top: -24%;
+        }
+      }
+      &:nth-child(2) {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: '';
+          background: url("../img/pointer4.png") 100% 100% no-repeat;
+          background-size: cover;
+          width: 115.5px;
+          height: 84px;
+          left: -45%;
+          top: -36%;
+        }
+      }
+    }
+  }
+  &__head {
+    font-size: 44px;
+    line-height: 53px;
+    margin: 0 0 52px;
+    font-family: "SFProDisplay-Regular";
+  }
+
+  &__item-head {
+    font-family: "SFProDisplay-Bold";
     font-size: 21px;
     line-height: 24px;
-    font-family: "SFProDisplay-Semibold";
   }
-  &__article-text {
+  &__text {
+    font-family: "SFProDisplay-Light";
+    width: 280px;
+    font-weight: 300;
     font-size: 15px;
     line-height: 130%;
-    font-family: "SFProDisplay-Light";
-    font-weight: 300;
-    max-width: 300px;
   }
 }

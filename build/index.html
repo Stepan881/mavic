@@ -7,9 +7,10 @@
   <title>Mavic</title>
 </head>
 <body>
-  <header class="header">
+
+  <header class="header" id="header">
     <div class="header__wrapper header__wrapper--bottom">
-      <a class="header__image-wrapper" href="/">
+      <a class="header__image-wrapper" href="#">
         <img clas="header__img" src="./img/logo.png" alt="логотип">
         <span class="header__logo-text">MAVIC 2 PRO</span>
       </a>
@@ -37,21 +38,21 @@
     </div>
   </header>
 
-  <section class="about-drone" id="about-drone">
-    <div class="about-drone__top"></div>
-    <div class="about-drone__wrapper">
-      <h1 class="about-drone__head">Mavic 2 Pro</h1>
-      <img src="./img/drone.png" alt="Дрон" class="about-drone__drone-img">
-      <p class="about-drone__text">Квадрокоптер Dji Mavic 2 Pro с профессиональной камерой Hasselblad</p>
-      <ul class="about-drone__list-social">
-        <li class="about-drone__item-social">
-          <a href="#" class="about-drone__social-link">
+  <section class="head" id="head">
+    <div class="head__top"></div>
+    <div class="head__wrapper">
+      <h1 class="head__head">Mavic 2 Pro</h1>
+        <img src="./img/drone.png" alt="Дрон" class="head__drone-img">
+      <p class="head__text">Квадрокоптер Dji Mavic 2 Pro с профессиональной камерой Hasselblad</p>
+      <ul class="head__list-social">
+        <li class="head__item-social">
+          <a href="#" class="head__social-link">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M40 20C40 8.95599 31.044 0 20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C20.1175 40 20.2344 39.9976 20.3516 39.9954V24.4263H16.0547V19.4186H20.3516V15.7336C20.3516 11.46 22.9605 9.13391 26.7728 9.13391C28.5983 9.13391 30.1675 9.27002 30.625 9.33075V13.7973H27.9962C25.9222 13.7973 25.5206 14.783 25.5206 16.2292V19.4186H30.4797L29.8334 24.4263H25.5206V39.2273C33.8803 36.8307 40 29.129 40 20Z" fill="white"/>
             </svg></a>
         </li>
-        <li class="about-drone__item-social">
-          <a href="#" class="about-drone__social-link">
+        <li class="head__item-social">
+          <a href="#" class="head__social-link">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.5089 23.4939L24.0146 19.7469L17.5089 16V23.4939Z" fill="white"/>
               <path d="M20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C31.044 40 40 31.044 40 20C40 8.95599 31.044 0 20 0ZM32.4969 20.0204C32.4969 20.0204 32.4969 24.0765 31.9824 26.0324C31.694 27.103 30.8499 27.9471 29.7794 28.2352C27.8235 28.75 20 28.75 20 28.75C20 28.75 12.197 28.75 10.2206 28.2147C9.15009 27.9266 8.30597 27.0822 8.01758 26.0117C7.50275 24.0765 7.50275 20 7.50275 20C7.50275 20 7.50275 15.9442 8.01758 13.9883C8.30566 12.9178 9.17053 12.0529 10.2206 11.7648C12.1765 11.25 20 11.25 20 11.25C20 11.25 27.8235 11.25 29.7794 11.7853C30.8499 12.0734 31.694 12.9178 31.9824 13.9883C32.5177 15.9442 32.4969 20.0204 32.4969 20.0204Z" fill="white"/>
@@ -59,8 +60,8 @@
               
           </a>
         </li>
-        <li class="about-drone__item-social">
-          <a href="#" class="about-drone__social-link">
+        <li class="head__item-social">
+          <a href="#" class="head__social-link">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M23.8281 20C23.8281 22.1143 22.1143 23.8281 20 23.8281C17.8857 23.8281 16.1719 22.1143 16.1719 20C16.1719 17.8857 17.8857 16.1719 20 16.1719C22.1143 16.1719 23.8281 17.8857 23.8281 20Z" fill="white"/>
               <path d="M28.9526 13.2269C28.7686 12.7283 28.475 12.2769 28.0936 11.9064C27.7231 11.525 27.272 11.2314 26.7731 11.0474C26.3684 10.8902 25.7605 10.7031 24.6408 10.6522C23.4296 10.5969 23.0664 10.585 20 10.585C16.9333 10.585 16.5701 10.5966 15.3592 10.6519C14.2395 10.7031 13.6313 10.8902 13.2269 11.0474C12.728 11.2314 12.2766 11.525 11.9064 11.9064C11.525 12.2769 11.2314 12.728 11.0471 13.2269C10.8899 13.6316 10.7028 14.2398 10.6519 15.3595C10.5966 16.5704 10.5847 16.9336 10.5847 20.0003C10.5847 23.0667 10.5966 23.4299 10.6519 24.6411C10.7028 25.7608 10.8899 26.3687 11.0471 26.7734C11.2314 27.2723 11.5247 27.7234 11.9061 28.0939C12.2766 28.4753 12.7277 28.7689 13.2266 28.9529C13.6313 29.1104 14.2395 29.2975 15.3592 29.3484C16.5701 29.4037 16.933 29.4153 19.9997 29.4153C23.0667 29.4153 23.4299 29.4037 24.6405 29.3484C25.7602 29.2975 26.3684 29.1104 26.7731 28.9529C27.7747 28.5666 28.5663 27.775 28.9526 26.7734C29.1098 26.3687 29.2969 25.7608 29.3481 24.6411C29.4034 23.4299 29.415 23.0667 29.415 20.0003C29.415 16.9336 29.4034 16.5704 29.3481 15.3595C29.2972 14.2398 29.1101 13.6316 28.9526 13.2269ZM20 25.8972C16.7429 25.8972 14.1025 23.2571 14.1025 20C14.1025 16.7429 16.7429 14.1028 20 14.1028C23.2568 14.1028 25.8972 16.7429 25.8972 20C25.8972 23.2571 23.2568 25.8972 20 25.8972ZM26.1304 15.2478C25.3693 15.2478 24.7522 14.6307 24.7522 13.8696C24.7522 13.1085 25.3693 12.4915 26.1304 12.4915C26.8915 12.4915 27.5085 13.1085 27.5085 13.8696C27.5082 14.6307 26.8915 15.2478 26.1304 15.2478Z" fill="white"/>
@@ -70,7 +71,7 @@
           </a>
         </li>
       </ul>
-      <a href="#advantages" class="about-drone__arrow-bottom arrow-bottom">
+      <a href="#about-drone" class="head__arrow-bottom arrow-bottom">
         <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.64">
         <path d="M1 1L8.5 8L16 1" stroke="white"/>
@@ -82,32 +83,94 @@
 
   <section class="background"></section>
 
-  <section class="advantages" id="advantages">
-    <div class="advantages__top"></div>
-    <div class="advantages__wrapper">
-      <div class="advantages__content">
-        <h2 class="advantages__head">Что такое Mavic 2 Pro?</h2>
-        <p class="advantages__text">Дрон Mavic 2 Pro - это инженерное чудо, идеальное для аэросъемки. Дрон обладает всеми лучшими технологиями DJI, он преобразит мир аэросъемки.
+  <section class="about-drone" id="about-drone">
+    <div class="about-drone__top"></div>
+    <div class="about-drone__wrapper">
+      <div class="about-drone__content">
+        <h2 class="about-drone__head">Что такое Mavic 2 Pro?</h2>
+        <p class="about-drone__text">Дрон Mavic 2 Pro - это инженерное чудо, идеальное для аэросъемки. Дрон обладает всеми лучшими технологиями DJI, он преобразит мир аэросъемки.
         </p>
-        <p class="advantages__text">Mavic 2 Pro оснащен совершенно новой камерой Hasselblad L1D-20c. Камера L1D-20c работает по уникальной технологии Hasselblad Natural Colour Solution (HNCS)5, позволяющей пользователям делать великолепные снимки с воздуха с разрешением в 20 мегапикселей и потрясающими цветами.
+        <p class="about-drone__text">Mavic 2 Pro оснащен совершенно новой камерой Hasselblad L1D-20c. Камера L1D-20c работает по уникальной технологии Hasselblad Natural Colour Solution (HNCS)5, позволяющей пользователям делать великолепные снимки с воздуха с разрешением в 20 мегапикселей и потрясающими цветами.
         </p>
       </div>
-      <div class="advantages__img-wrapper">
-        <img src="./img/advantages-mavic.png" alt="Лучшая беспилотная технология аэросъемки" class="advantages__image">
-        <span class="advantages__info">Лучшая беспилотная технология аэросъемки
+      <div class="about-drone__img-wrapper">
+        <img src="./img/about-drone-mavic.png" alt="Лучшая беспилотная технология аэросъемки" class="about-drone__image">
+        <span class="about-drone__info">Лучшая беспилотная технология аэросъемки
         </span>
-        <div class="advantages__img-arrow">
-          <span class=" advantages__img-arrow--left">
+        <div class="about-drone__img-arrow">
+          <span class="about-drone__img-arrow--left">
             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.21839 1L1 9L9.21839 17" stroke="white"/>
             </svg>
           </span>
-          <span class=" advantages__img-arrow--right">
+          <span class="about-drone__img-arrow--right">
             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.78161 17L9 9L0.78161 1" stroke="black"/>
               </svg>              
           </span>
         </div>
+      </div>
+      <a href="#advantages" class="about-drone__arrow-bottom arrow-bottom">
+        <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.64">
+        <path d="M1 1L8.5 8L16 1" stroke="white"/>
+        </g>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="advantages" id="advantages">
+    <div class="advantages__top"></div>
+    <div class="advantages__wrapper">
+      <h2 class="advantages__head">Преимущества</h2>
+      <div class="advantages__content">
+
+
+        <article class="advantages__article">
+          <span class="advantages__number">1</span>
+          <div class="advantages__image-wrapper">
+            <img src="./img/article1.png" alt="Интеллектуальные режимы" class="advantages__img">
+          </div>
+          <div class="advantages__article-content">
+            <h3 class="advantages__article-head">Интеллектуальные режимы</h3>
+            <p class="advantages__article-text">Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки QuickShot:Roket/Dronie/Circle/Helix/Boome rang/Asteroid.</p>
+        </div>
+        </article>
+
+        <article class="advantages__article">
+          <span class="advantages__number">2</span>
+          <div class="advantages__image-wrapper">
+            <img src="./img/article2.png" alt="Active Track 2.0" class="advantages__img">
+          </div>
+          <div class="advantages__article-content">
+            <h3 class="advantages__article-head">Active Track 2.0</h3>
+            <p class="advantages__article-text">Усовершенствованный режим второго поколения распознаёт и отслеживает объекты ещё точнее, быстрее и умнее.</p>
+        </div>
+        </article>
+        <article class="advantages__article">
+          <span class="advantages__number">3</span>
+          <div class="advantages__image-wrapper">
+            <img src="./img/article3.png" alt="Панорамная съемка" class="advantages__img">
+          </div>
+          <div class="advantages__article-content">
+            <h3 class="advantages__article-head">Панорамная съемка</h3>
+            <p class="advantages__article-text">Mavic 2 поддерживает 4 режима панорамной съёмки: сферическая, 180 градусов, горизонтальная, вертикальная
+            </p>
+        </div>
+        </article>
+        <article class="advantages__article">
+          <span class="advantages__number">4</span>
+          <div class="advantages__image-wrapper">
+            <img src="./img/article4.png" alt="Крутая камера!" class="advantages__img">
+          </div>
+          <div class="advantages__article-content">
+            <h3 class="advantages__article-head">Крутая камера!</h3>
+            <p class="advantages__article-text">Технология Hyperlapse в четырёх режимах исполнения. Улучшенный фото режим HDR Функция HyperLight для съёмки в условиях слабого свещения 4К съёмка
+            </p>
+        </div>
+        </article>
+
       </div>
       <a href="#specifications" class="advantages__arrow-bottom arrow-bottom">
         <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,61 +180,41 @@
         </svg>
       </a>
     </div>
+
   </section>
 
   <section class="specifications" id="specifications">
     <div class="specifications__top"></div>
     <div class="specifications__wrapper">
-      <h2 class="specifications__head">Преимущества</h2>
+      <h2 class="specifications__head">Характеристики</h2>
       <div class="specifications__content">
-
-
-        <article class="specifications__article">
-          <span class="specifications__number">1</span>
-          <div class="specifications__image-wrapper">
-            <img src="./img/article1.png" alt="Интеллектуальные режимы" class="specifications__img">
-          </div>
-          <div class="specifications__article-content">
-            <h3 class="specifications__article-head">Интеллектуальные режимы</h3>
-            <p class="specifications__article-text">Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки QuickShot:Roket/Dronie/Circle/Helix/Boome rang/Asteroid.</p>
+        <div class="specifications__image-wrapper">
+          <img src="./img/drone.png" alt="Дрон" class="specifications-drone__drone-img">
         </div>
-        </article>
-
-        <article class="specifications__article">
-          <span class="specifications__number">2</span>
-          <div class="specifications__image-wrapper">
-            <img src="./img/article2.png" alt="Active Track 2.0" class="specifications__img">
+        <div class="specifications__item-top">
+          <div class="specifications__item">
+            <h3 class="specifications__item-head">Dlog-M 10 бит</h3>
+            <p class="specifications__text">Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном, дающим больше возможностей для цветокоррекции.</p>
           </div>
-          <div class="specifications__article-content">
-            <h3 class="specifications__article-head">Active Track 2.0</h3>
-            <p class="specifications__article-text">Усовершенствованный режим второго поколения распознаёт и отслеживает объекты ещё точнее, быстрее и умнее.</p>
-        </div>
-        </article>
-        <article class="specifications__article">
-          <span class="specifications__number">3</span>
-          <div class="specifications__image-wrapper">
-            <img src="./img/article3.png" alt="Панорамная съемка" class="specifications__img">
+          <div class="specifications__item">
+            <h3 class="specifications__item-head">Матрица CMOS 1</h3>
+            <p class="specifications__text">Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic Pro</p>
           </div>
-          <div class="specifications__article-content">
-            <h3 class="specifications__article-head">Панорамная съемка</h3>
-            <p class="specifications__article-text">Mavic 2 поддерживает 4 режима панорамной съёмки: сферическая, 180 градусов, горизонтальная, вертикальная
-            </p>
         </div>
-        </article>
-        <article class="specifications__article">
-          <span class="specifications__number">4</span>
-          <div class="specifications__image-wrapper">
-            <img src="./img/article4.png" alt="Крутая камера!" class="specifications__img">
+        <div class="specifications__item-bottom">
+          <div class="specifications__item">
+            <h3 class="specifications__item-head">Камера Hasselblad</h3>
+            <p class="specifications__text">Камера Hasselblad L1D-20С 
+              известны эргономичным дизайном 
+              и превосходным качеством изображений. </p>
           </div>
-          <div class="specifications__article-content">
-            <h3 class="specifications__article-head">Крутая камера!</h3>
-            <p class="specifications__article-text">Технология Hyperlapse в четырёх режимах исполнения. Улучшенный фото режим HDR Функция HyperLight для съёмки в условиях слабого свещения 4К съёмка
-            </p>
+          <div class="specifications__item">
+            <h3 class="specifications__item-head">Видео HDR</h3>
+            <p class="specifications__text">Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре</p>
+          </div>
         </div>
-        </article>
-
       </div>
-      <a href="#" class="specifications__arrow-bottom arrow-bottom">
+      <a href="#questions" class="specifications__arrow-bottom arrow-bottom">
         <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.64">
         <path d="M1 1L8.5 8L16 1" stroke="white"/>
@@ -179,121 +222,80 @@
         </svg>
       </a>
     </div>
-
   </section>
 
+  <section class="questions" id="questions">
+    <div class="questions__top"></div>
+    <div class="questions__wrapper">
+      <h2 class="questions__head">Остались вопросы?</h2>
+      <div class="questions__content">
+        <div class="questions__wrapper-img">
+          <img src="./img/questions-drone.png" alt="Информация о дроне" class="questions__image">
+        </div>
 
 
+        <div class="questions__item">
+          <div class="questions__item-content">
+            <h3 class="questions__item-head">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h3>
+            <p class="questions__item-text questions__item-text--active">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
+          </div>
+          <a href="#" class="questions__arrow  questions__arrow--active">
+            <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.6013 12.7995L0.166606 1.19008C-0.0555352 0.916736 -0.0555352 0.478353 0.166606 0.205009C0.388746 -0.0683362 0.74501 -0.0683362 0.96715 0.205009L9.99948 11.3193L19.0318 0.205009C19.2539 -0.0683362 19.6102 -0.0683362 19.8323 0.205009C19.9413 0.339102 20 0.519613 20 0.694966C20 0.87032 19.9455 1.05083 19.8323 1.18492L10.3977 12.7943C10.1797 13.0677 9.81925 13.0677 9.6013 12.7995Z" fill="#5E5E57"/>
+            </svg>
+            </a>
+        </div>
 
+        <div class="questions__item">
+          <div class="questions__item-content">
+            <h3 class="questions__item-head">Чем Mavic 2 лучше Mavic Pro?</h3>
+            <p class="questions__item-text">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
+          </div>
+          <a href="#" class="questions__arrow">
+            <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.6013 12.7995L0.166606 1.19008C-0.0555352 0.916736 -0.0555352 0.478353 0.166606 0.205009C0.388746 -0.0683362 0.74501 -0.0683362 0.96715 0.205009L9.99948 11.3193L19.0318 0.205009C19.2539 -0.0683362 19.6102 -0.0683362 19.8323 0.205009C19.9413 0.339102 20 0.519613 20 0.694966C20 0.87032 19.9455 1.05083 19.8323 1.18492L10.3977 12.7943C10.1797 13.0677 9.81925 13.0677 9.6013 12.7995Z" fill="#5E5E57"/>
+            </svg>
+            </a>
+        </div>
 
+        <div class="questions__item">
+          <div class="questions__item-content">
+            <h3 class="questions__item-head">Можно ли подключить Mavic 2 к очкам DJI Goggles?</h3>
+            <p class="questions__item-text">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
+          </div>
+          <a href="#" class="questions__arrow">
+            <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.6013 12.7995L0.166606 1.19008C-0.0555352 0.916736 -0.0555352 0.478353 0.166606 0.205009C0.388746 -0.0683362 0.74501 -0.0683362 0.96715 0.205009L9.99948 11.3193L19.0318 0.205009C19.2539 -0.0683362 19.6102 -0.0683362 19.8323 0.205009C19.9413 0.339102 20 0.519613 20 0.694966C20 0.87032 19.9455 1.05083 19.8323 1.18492L10.3977 12.7943C10.1797 13.0677 9.81925 13.0677 9.6013 12.7995Z" fill="#5E5E57"/>
+            </svg>
+            </a>
+        </div>
 
-
-
-
-  <section class="questions" id="questions"></section>
+        <div class="questions__item">
+          <div class="questions__item-content">
+            <h3 class="questions__item-head">Является ли Mavic 2 водонепроницаемым？</h3>
+            <p class="questions__item-text">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
+          </div>
+          <a href="#" class="questions__arrow">
+            <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.6013 12.7995L0.166606 1.19008C-0.0555352 0.916736 -0.0555352 0.478353 0.166606 0.205009C0.388746 -0.0683362 0.74501 -0.0683362 0.96715 0.205009L9.99948 11.3193L19.0318 0.205009C19.2539 -0.0683362 19.6102 -0.0683362 19.8323 0.205009C19.9413 0.339102 20 0.519613 20 0.694966C20 0.87032 19.9455 1.05083 19.8323 1.18492L10.3977 12.7943C10.1797 13.0677 9.81925 13.0677 9.6013 12.7995Z" fill="#5E5E57"/>
+            </svg>
+            </a>
+        </div>
+      </div>
+      <a href="#contacts" class="questions__arrow-bottom arrow-bottom">
+        <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.64">
+        <path d="M1 1L8.5 8L16 1" stroke="white"/>
+        </g>
+        </svg>
+      </a>
+    </div>
+  </section>
   <section class="contacts" id="contacts">
-    <!-- <pre>
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-      qeeqwe
-      qeeqweqwe
-      qeeqweqweweq
-      weqwqwe
-      qwe
-    </pre> -->
+  
   </section>
+
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
