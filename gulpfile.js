@@ -28,12 +28,11 @@ gulp.task("del", function () {
   });
 
   gulp.task("css", function () {
+
     return gulp.src("app/sass/style.scss")
       .pipe(plumber())
       .pipe(sass())
-      .pipe(postcss([
-        autoprefixer()
-      ]))
+      .pipe(postcss([autoprefixer()]))
       .pipe(gulp.dest("app/css"))
       .pipe(csso())
       .pipe(rename("style.min.css"))

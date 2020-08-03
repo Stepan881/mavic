@@ -18,12 +18,14 @@ questionsContent.addEventListener('click', (evt) => {
     });
 
     if (evt.target.closest(`.questions__item`)) {
-      console.log(evt.target.closest(`.questions__item`).querySelector(`.questions__item-text`));
+      // console.log(evt.target.closest(`.questions__item`).querySelector(`.questions__item-text`));
       evt.target.closest(`.questions__item`).querySelector(`.questions__item-text`).classList.add(`questions__item-text--active`)
     }
   }
   document.querySelector(`#questions`).scrollIntoView({
-    behavior: 'smooth',
+    behavior: 'auto',
     block: 'start'
   })
+
+  
 });

@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "Mavic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mavic тренеровочный сайт) ",
   "main": "index.js",
   "dependencies": {
     "gulp": "^4.0.2"
@@ -10,6 +10,7 @@
     "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
@@ -22,5 +23,10 @@
     "start": "gulp start"
   },
   "author": "Stepan881",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
 }

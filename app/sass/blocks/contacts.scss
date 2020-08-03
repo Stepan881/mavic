@@ -1,0 +1,30 @@
+.contacts {
+  color: $color-header;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  &__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 25px;   
+  }
+
+  &__head {
+    font-size: 44px;
+    line-height: 53px;
+    font-family: "SFProDisplay-Light";
+    margin: 0;
+  }
+  &__content {
+    max-width: 1085px;
+    width: 100%;
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+}
