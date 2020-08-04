@@ -4,11 +4,14 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  justify-content: flex-start;
+  position: relative;
 
   &__top {
     display: flex;
+    min-height: 66px;
+    max-height: 160px;
+    height: 100%;
   }
 
   &__wrapper {
@@ -17,14 +20,16 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-height: 620px;
-    padding-bottom: 25px;
     position: relative;
+    justify-content: space-between;
+    max-height: 492px;
+    margin-bottom: 60px;
+    height: 100%;
   }
 
   &__content {
     width: 470px;
-    margin-bottom: 200px;
+    height: auto;
   }
 
   &__head {
@@ -48,7 +53,7 @@
     width: 560px;
     height: 300px;
     position: absolute;
-    bottom: 99px;
+    bottom: -27px;
     right: 18px;
     z-index: 1;
 

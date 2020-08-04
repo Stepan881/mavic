@@ -372,7 +372,11 @@ a {
   transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  bottom: 25px;
+  left: calc(50% - 20px); }
   .arrow-bottom:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -514,13 +518,18 @@ a {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
   .head__top {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    min-height: 66px;
+    max-height: 164px;
+    height: 100%; }
   .head__wrapper {
     width: 100%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -528,27 +537,29 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-height: 510px;
-    padding-bottom: 25px; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 492px;
+    margin-bottom: 60px; }
   .head__head {
     margin: 0;
     font-weight: 600;
     font-size: 96px;
-    line-height: 115px;
-    margin-bottom: 2%; }
+    line-height: 115px; }
   .head__drone-img {
     max-width: 660px;
     max-height: 198px;
     width: 100%;
     height: 100%;
-    margin: 0 auto 25px; }
+    margin: 0 auto; }
   .head__text {
     font-family: "SFProDisplay-Light";
     font-size: 17px;
     line-height: 150%;
     max-width: 334px;
     width: 100%;
-    margin: 0 auto 32px; }
+    margin: 0 auto; }
   .head__list-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -583,13 +594,17 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative; }
   .about-drone__top {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    min-height: 66px;
+    max-height: 160px;
+    height: 100%; }
   .about-drone__wrapper {
     max-width: 1183px;
     width: 100%;
@@ -601,12 +616,16 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    max-height: 620px;
-    padding-bottom: 25px;
-    position: relative; }
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 492px;
+    margin-bottom: 60px;
+    height: 100%; }
   .about-drone__content {
     width: 470px;
-    margin-bottom: 200px; }
+    height: auto; }
   .about-drone__head {
     font-size: 44px;
     line-height: 53px;
@@ -625,7 +644,7 @@ a {
     width: 560px;
     height: 300px;
     position: absolute;
-    bottom: 99px;
+    bottom: -27px;
     right: 18px;
     z-index: 1; }
     .about-drone__img-wrapper::before {
@@ -697,7 +716,8 @@ a {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
   .advantages__wrapper {
     max-width: 1200px;
     width: 100%;
@@ -816,7 +836,8 @@ a {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
   .specifications__wrapper {
     max-width: 1200px;
     width: 100%;
@@ -935,7 +956,8 @@ a {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
   .questions__wrapper {
     max-width: 1200px;
     width: 100%;
