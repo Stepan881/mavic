@@ -95,17 +95,23 @@
         opacity: 0.5;
       }
     }
-    &--left {
-      display: flex;
-      background-color: #1C1C1C;
-      width: 50%;
-      height: 48px;
-    }
-    &--right {
+    &-left,
+    &-right {
       display: flex;
       background-color: #FFFFFF;
       width: 50%;
       height: 48px;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        background-color: #1C1C1C;
+        svg{
+          path {
+            transition: 0.3s;
+            stroke: #FFFFFF;
+          }
+        }
+      }
     }
   }
 }

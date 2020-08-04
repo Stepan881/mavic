@@ -91,7 +91,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.4;
+
+    }
 
     svg {
       display: flex;
@@ -101,9 +107,11 @@
     }
 
     &--active {
+      background-color: #1c1c1c;
       svg {
         transition: 1s;
         transform: rotate(180deg);
+        
       }
     }
   }

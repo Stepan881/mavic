@@ -6,25 +6,161 @@
   justify-content: space-between;
   
   &__wrapper {
-    max-width: 1200px;
+    max-width: 1180px;
     width: 100%;
-    margin: 0 auto;
-    padding-bottom: 25px;   
+    margin: 0px auto;
   }
 
   &__head {
     font-size: 44px;
     line-height: 53px;
     font-family: "SFProDisplay-Light";
-    margin: 0;
+    margin: 0 0 54px 0;
+    width: 100%;
   }
   &__content {
-    max-width: 1085px;
+    max-width: 1016px;
     width: 100%;
-    margin-bottom: 44px;
+    margin: 0 0 187px 31px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     position: relative;
+    max-height: 324px;
+    height: 100%;
+  }
+  &__contacts-list {
+    max-width: 240px;
+    width: 100%;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__city {
+    font-family: "SFProDisplay-Medium";
+    font-style: normal;
+    color: $color-header;
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  &__tel,
+  &__mail {
+    color: $color-header;
+    font-family: "SFProDisplay-Light";
+    font-size: 15px;
+    line-height: 130%;
+    transition: 0.3s;
+    margin-bottom: 5px;
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.4;
+      text-decoration-line: underline;
+    }
+  }
+  &__mail {
+    margin-bottom: 32px;
+  }
+  &__form {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 57px;
+    width: 100%;
+  }
+  &__form-fieldset {
+    width: 100%;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  &__form-legend {
+    margin-bottom: 13px;
+  }
+  &__form-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 130%;
+    line-height: 12px;    
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__form-input {
+    width: 48%;
+    height: 46px;
+    background: rgba(0, 0, 0, 0.3);
+    color: $color-header;
+    border: none;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 130%; 
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  &__form-textarea {
+    width: 100%;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.3);
+    color: $color-header;
+    border: none;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 130%;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    line-height: 20px;
+    margin-bottom: 16px;
+    resize: none;
+  }
+
+  &__form-submit {
+    width: 120px;
+    height: 34px;
+    color: $color-header;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid $color-header;
+    text-align: center;
+    background: inherit;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    &:hover {
+      transition: 0.3s;
+      color: #1C1C1C;
+      background-color: $color-header;
+    }
+  }
+
+  &__list-social {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+
+  }
+  &__item-social {
+    margin: 10px;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
   }
 }

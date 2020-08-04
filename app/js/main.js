@@ -3,7 +3,11 @@ const questionsArrows = document.querySelectorAll(`.questions__arrow`);
 const questionsText = document.querySelectorAll(`.questions__item-text`);
 const links = document.querySelectorAll(`a`);
 
-
+// let windowWidth = window.innerWidth;
+// window.addEventListener(`resize`, () => {
+//   let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+//   console.log(posTop);
+// });
 
 links.forEach(el => {
   if (el.hash[0] === `#` && el.href.length > 3) {
